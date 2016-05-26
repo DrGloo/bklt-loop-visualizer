@@ -1,0 +1,24 @@
+.memory-box-container {
+  text-align: center;
+  margin-bottom: 20px;
+  min-width: 150px;
+}
+
+.memory-box-container .variable-name {
+  font-size: 14px;
+}
+
+.memory-box-container .memory-box {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  border-radius: 2px;
+  min-width: 150px;
+  height: 100px;
+}
+
+#console-log {
+  border: 1px solid #cccccc;
+  height: 300px;
+  border-radius: 2px;
+  padding: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Loop Visualizer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class='container'>
+            <h1>Loop Visualizer</h1>
+            <p>This page helps you visualize how a for loop is executed</p>
+            <hr>
+            
+            <div>
+              <h2>Controls</h2>
+              <a id="start-loop-btn" class='btn btn-default'>START LOOP!</a>
+            </div>
+            
+            <div>
+              <h2>Loop Code</h2>
+              <pre>
+                1. for(var i=0; i < ingredients.length; i++) {
+                2.  console.log("Ingredient " + i + ": " + ingredients[i]);
+                3. }
+              </pre>
+            </div>
+            
+            <div>
+              <h2>Memory</h2>
+              <div class='col-md-4 memory-box-container' id="memory-box-container-ingredients">
+                <h3 class='variable-name'>ingredients</h3>
+                <div class='memory-box'></div>
+              </div>
+              <div class='col-md-4 memory-box-container' id="memory-box-container-i">
+                <h3 class='variable-name'>i</h3>
+                <div class='memory-box'></div>
+              </div>
+              <div class='col-md-4 memory-box-container' id="memory-box-container-current-ingredient">
+                <h3 class='variable-name'>ingredients[i]</h3>
+                <div class='memory-box'></div>
+              </div>
+            </div>
+            
+            <div>
+              <h2>Fake Console</h2>
+              <div id="console-log">
+              </div>
+            </div>
+            
+            <div>
+              <h2>Directions</h2>
+              <ol>
+                <li>in script.js - add a click event on the "Start Loop" button that executes the function "runLoop()"</li>
+                <li>in script.js - add a line inside of your for loop that puts the current value of i into the proper memory box</li>
+                <li>in script.js - add a line inside of your for loop that puts the current value of i into the proper memory box</li>
+                <li>The screen is hard to read. Edit your html to put each memory box into a column so that all three memory boxes are on one line. HINT: bootstrap rows and columns</li>
+                <li>In script.js - add a line inside your for loop that writes to our fake html console the output of the "Loop Code"</li>
+                <li>In script.js - add a line inside your for loop that writes the current iteration number to our fake console Add a wait after it so that we can see the progress.</li>
+                <li>In style.css - the fake console is overflowing with our log content. Change the css to make the fake console output scroll</li>
+                <li>Extra Credit - Using css, jquery, and html - can you highlight the current line of code being executed on the html page as the javascript mimics the execution of the loop?</li>
+              </ol>
+            </div>
+            
+        </div>
+    </body>
+</html>
